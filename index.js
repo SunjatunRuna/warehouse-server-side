@@ -6,7 +6,8 @@ require('dotenv').config()
 const port = process.env.PORT || 5000;
 
 //middleware
-
+//DB_USER = healthyFruits
+//DB_PASS = HtAGDXlEGCljVqFy
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.zor4r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
